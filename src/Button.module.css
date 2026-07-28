@@ -1,0 +1,44 @@
+.button {
+  font-family: inherit;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.default {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+/* Types */
+.primary {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.ghost {
+  background: transparent;
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+.ghost:hover:not(:disabled) {
+  background: rgba(37, 99, 235, 0.08);
+}
