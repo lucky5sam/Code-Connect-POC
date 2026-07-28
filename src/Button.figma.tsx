@@ -18,7 +18,7 @@ figma.connect(
       label: figma.string('Label'),
       type: figma.enum('Type', {
         Primary: 'primary',
-        Ghost: 'ghost',
+        Outline: 'outline',
       }),
       size: figma.enum('Size', {
         Default: 'default',
@@ -26,7 +26,11 @@ figma.connect(
       }),
     },
     example: ({ label, type, size }) => (
-      <Button type={type} size={size} label={label} />
+      <div>
+        <Button type={type} size={size} label={label} />
+        <span>Hello</span>
+      </div>
+    
     ),
   }
 );

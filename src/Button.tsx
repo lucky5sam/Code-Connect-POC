@@ -1,6 +1,6 @@
 import styles from './Button.module.css';
 
-export type ButtonType = 'primary' | 'ghost';
+export type ButtonType = 'primary' | 'outline';
 export type ButtonSize = 'default' | 'large';
 
 export interface ButtonProps {
